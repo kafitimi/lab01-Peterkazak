@@ -154,7 +154,7 @@ int main(int argc, char* argv[]) {
     char header[54];
     char palette[4 * 256];
     
-    int datasize = color == 2 ? M * ceil(3 * N / 4.0) * 4 : M * ceil(3 * N / 4.0) * 4;
+    int datasize = M * ceil(3 * N / 4.0) * 4;
     char* data = new char[datasize];
     
     fillheader(header);
